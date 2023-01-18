@@ -1,0 +1,15 @@
+C:\Users\223089249\source\repos\snakenladder\snakenladder\bin\Debug\net6.0\snakenladder.exe
+C:\Users\223089249\source\repos\snakenladder\snakenladder\bin\Debug\net6.0\snakenladder.deps.json
+C:\Users\223089249\source\repos\snakenladder\snakenladder\bin\Debug\net6.0\snakenladder.runtimeconfig.json
+C:\Users\223089249\source\repos\snakenladder\snakenladder\bin\Debug\net6.0\snakenladder.dll
+C:\Users\223089249\source\repos\snakenladder\snakenladder\bin\Debug\net6.0\snakenladder.pdb
+C:\Users\223089249\source\repos\snakenladder\snakenladder\obj\Debug\net6.0\snakenladder.csproj.AssemblyReference.cache
+C:\Users\223089249\source\repos\snakenladder\snakenladder\obj\Debug\net6.0\snakenladder.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\223089249\source\repos\snakenladder\snakenladder\obj\Debug\net6.0\snakenladder.AssemblyInfoInputs.cache
+C:\Users\223089249\source\repos\snakenladder\snakenladder\obj\Debug\net6.0\snakenladder.AssemblyInfo.cs
+C:\Users\223089249\source\repos\snakenladder\snakenladder\obj\Debug\net6.0\snakenladder.csproj.CoreCompileInputs.cache
+C:\Users\223089249\source\repos\snakenladder\snakenladder\obj\Debug\net6.0\snakenladder.dll
+C:\Users\223089249\source\repos\snakenladder\snakenladder\obj\Debug\net6.0\refint\snakenladder.dll
+C:\Users\223089249\source\repos\snakenladder\snakenladder\obj\Debug\net6.0\snakenladder.pdb
+C:\Users\223089249\source\repos\snakenladder\snakenladder\obj\Debug\net6.0\snakenladder.genruntimeconfig.cache
+C:\Users\223089249\source\repos\snakenladder\snakenladder\obj\Debug\net6.0\ref\snakenladder.dll
