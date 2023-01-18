@@ -1,4 +1,6 @@
-﻿namespace snakenladder
+﻿using System.Xml.Linq;
+
+namespace snakenladder
 {
     internal class Program
     {
@@ -55,11 +57,86 @@
             }
             Console.WriteLine($"you won and took {moves} moves");
         }
+        static void Two_Player()
+        {
+            Console.WriteLine("Two Player ");
+            int firstPlayerPos = START_POSITION, secondPlayerPos = START_POSITION,firstPlayermoves=0,secondPlayermoves=0;
+            bool turn =false;
+            while (firstPlayerPos < END_POSITION && secondPlayerPos < END_POSITION)
+            {
+                if (turn)
+                {
+                    Console.WriteLine("Player1's Turn");
+                    Console.WriteLine($"current position is {firstPlayerPos} and moves taken is {firstPlayermoves}");
+                    turn = false;
+                    int decide = Move();
+                    int roll = Die_Roll();
+                    Console.WriteLine("number on die is" + roll);
+                    firstPlayermoves++;
+                    switch (decide)
+                    {
+                        case NO_PLAY:
+                            Console.WriteLine("No Play");
+                            break;
+                        case LADDER:
+                            Console.WriteLine("Ladder");
+                            firstPlayerPos += roll;
+                            turn = true;
+                            break;
+                        case SNAKE:
+                            Console.WriteLine("Snake");
+                            if (firstPlayerPos - roll < 0)
+                            {
+                                firstPlayerPos = 0;
+                            }
+                            else firstPlayerPos = firstPlayerPos - roll;
+                            break;
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Player2's Turn");
+                    Console.WriteLine($"current position is {secondPlayerPos} and moves taken is {secondPlayermoves}");
+                    turn = false;
+                    int decide = Move();
+                    int roll = Die_Roll();
+                    Console.WriteLine("number on die is" + roll);
+                    secondPlayermoves++;
+                    switch (decide)
+                    {
+                        case NO_PLAY:
+                            Console.WriteLine("No Play");
+                            break;
+                        case LADDER:
+                            Console.WriteLine("Ladder");
+                            secondPlayerPos += roll;
+                            turn = false;
+                            break;
+                        case SNAKE:
+                            Console.WriteLine("Snake");
+                            if (secondPlayerPos - roll < 0)
+                            {
+                                secondPlayerPos = 0;
+                            }
+                            else secondPlayerPos = secondPlayerPos - roll;
+                            break;
+                    }
+                }
+            }
+            if (firstPlayerPos >= 100)
+            {
+                Console.WriteLine("Player1 won");
+            }
+            else
+            {
+                Console.WriteLine("Player2 won");
+            }
+        }
 
         static void Main(string[] args)
         {
             Console.WriteLine("Hello, This is Snake and ladder game");
-            Single_Player();
+            Two_Player();
              
         }
     }
